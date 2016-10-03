@@ -21,7 +21,7 @@ Using any LED color, look at the lengths of their metal legs and you will see on
 
 Test led by running
 
-*```node led.js```
+* ```node led.js```
 
 ## Homework 6
 Using JavaScript, attempt to program each of the following:
