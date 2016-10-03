@@ -26,7 +26,7 @@ Using JavaScript, attempt to program each of the following:
 
 * program the led to turn on when the button is pressed
 * program the button to play one light pattern, e.g. blink three times
-* program the button to play different light patterns everything it's pressed
+* program the button to play different light patterns every time it's pressed
 * program the led come on every three seconds and use button to turn off
 * measure reaction time to turn off led
 
