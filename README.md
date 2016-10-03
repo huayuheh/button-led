@@ -19,6 +19,8 @@ Test button by running
 ## LED Setup
 Using any LED color, look at the lengths of their metal legs and you will see one is shorter than the other. The shorter leg is the negative (ground) end point and the longer one connects to GPIO 27. You may place the LED on the board by using any two row numbers available from columns A-E or the same for columns F-J.
 
+![LED](https://cdn.sparkfun.com/assets/0/c/5/d/a/518d2d78ce395f2675000000.png)
+
 Test led by running
 
 * ```node led.js```
