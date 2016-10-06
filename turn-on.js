@@ -9,7 +9,7 @@ var Gpio = require('onoff').Gpio,	//onoff module (use npm install onoff)
 button.setActiveLow( true );		//optional to reverse button value
 
 button.watch(function(err, value) {	//watch button changes
-	if (value === true){
+	if (value == true){
 		led.writeSync( 1 );
 		console.log('Button is ON' );
 	}else{
