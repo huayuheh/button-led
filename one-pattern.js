@@ -9,10 +9,10 @@ button.setActiveLow( true );		//optional to reverse button value
 
 button.watch(function(err, value) {	//watch button changes
 	if (value == true){
-		setInterval( function(){	  //setInterval repeats a function every fixed preset milliseconds
-			led.writeSync( ledState );	  //output next ledState
-		 	ledState = ledState ? 0 : 1;    //update next ledState, if 1 then 0 else if 0 then 1
-		}, 100);			  //setInterval fixed preset milliseconds
+		setTimeout(function(){ led.writeSync( 1 ); }, 100);
+   		setTimeout(function(){ led.writeSync( 0 ); }, 200);
+    	setTimeout(function(){ led.writeSync( 1 ); }, 300);
+    	setTimeout(function(){ led.writeSync( 0 ); }, 400);
 		console.log('Button is ON' );
 	}else{
 		led.writeSync( 0 );
