@@ -22,7 +22,7 @@ button.watch(function(err, value) {	//watch button changes
 	if (value == true){
 
 		funPattern(times%3);
-		console.log('Button is ON' + times%3 );
+		console.log('Button is ON ' + times%3 );
 	}else{
 		led.writeSync( 0 );
 		console.log('Button is OFF');
