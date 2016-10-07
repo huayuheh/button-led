@@ -18,7 +18,6 @@ button.watch(function(err, value) { //watch button changes
     setTimeout(function() {
         clearInterval(iv); // Stop blinking
         led.writeSync(0);  // Turn LED off.
-        led.unexport();    // Unexport GPIO and free resources
       }, 1);
     console.log('Button is OFF');
   }
