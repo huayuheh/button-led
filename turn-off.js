@@ -1,9 +1,9 @@
 var Gpio = require('onoff').Gpio,	//onoff module (use npm install onoff)
   button = new Gpio(17, 'in', 'both'),	//setup GPIO17 as output
   led = new Gpio(27, 'out'),      //setup GPIO27 as output
-  startTime = new Date(milliseconds),
   ledState = 0; 		  //internal variable to track LED state (1 = on, 0 = off)
 
+var startTime = new Date(milliseconds);
   setTimeout(function(){ led.writeSync( 0 ); }, 3000);
   setTimeout(function(){ led.writeSync( 1 ); }, 6000);
 
