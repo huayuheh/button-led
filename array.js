@@ -12,6 +12,7 @@ function funPattern(i){
   setTimeout(function(){ led.writeSync( 0 ); }, pattern[i][1]);
   setTimeout(function(){ led.writeSync( 1 ); }, pattern[i][2]);
   setTimeout(function(){ led.writeSync( 0 ); }, pattern[i][3]);
+  times = times +1;
 }
 
 
@@ -19,8 +20,9 @@ button.setActiveLow( true );		//optional to reverse button value
 
 button.watch(function(err, value) {	//watch button changes
 	if (value == true){
+
 		funPattern(times%3);
-		console.log('Button is ON' );
+		console.log('Button is ON' + times%3 );
 	}else{
 		led.writeSync( 0 );
 		console.log('Button is OFF');
